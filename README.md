@@ -13,25 +13,25 @@ We focused on the UN SDG Goal 4: Quality Education, specifically with the goals 
 # Group Members
 
 * Riley Koh
-*Kaisa Sherwood
-*Keilani Uehara
-*Bertrand Wan
-*Tilly Word
+* Kaisa Sherwood
+* Keilani Uehara
+* Bertrand Wan
+* Tilly Word
 
 # Features
--Auditory Feedback
--Visual Accessibility
--Visual Keyboard
--Clear, Accessible, Colorful UX 
-  -Dyslexia-Oriented Font 
--Performance-Based Levels
--Information Page
--Gamified Elements with Hippo Character and Animations
+* Auditory Feedback
+* Visual Accessibility
+* Visual Keyboard
+* Clear, Accessible, Colorful UX 
+  * Dyslexia-Oriented Font 
+* Performance-Based Levels
+* Information Page
+* Gamified Elements with Hippo Character and Animations
 
 # Bugs
 
 # Development Features
--React JS
--HTML, CSS, JavaScript
--Netlify
+* React JS
+* HTML, CSS, JavaScript
+* Netlify
 
