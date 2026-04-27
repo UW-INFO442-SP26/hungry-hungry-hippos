@@ -12,7 +12,7 @@ We focused on the UN SDG Goal 4: Quality Education, specifically with the goals 
 
 # Group Members
 
-*Riley Koh
+* Riley Koh
 *Kaisa Sherwood
 *Keilani Uehara
 *Bertrand Wan
