@@ -7,7 +7,7 @@ export default function NavBar() {
 
   return (
     <nav className="nav">
-      <div className="logo">MySite</div>
+      <div className="logo">HippoTypes</div>
 
       {/* Hamburger Icon */}
       <div className="hamburger" onClick={() => setOpen(!open)}>
@@ -31,6 +31,11 @@ export default function NavBar() {
         <li>
           <NavLink to="/contact">
             Contact
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/practice">
+            Practice
           </NavLink>
         </li>
       </ul>
