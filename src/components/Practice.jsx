@@ -69,6 +69,7 @@ export default function Practice() {
               justifyContent: "center",
               minHeight: 56,
               boxSizing: "border-box",
+              fontFamily: "'OpenDyslexic', sans-serif",
             }}
             role="dialog"
             aria-label="typing-practice"
@@ -89,6 +90,7 @@ export default function Practice() {
               borderRadius: 8,
               border: "1px solid #ccc",
               boxSizing: "border-box",
+              fontFamily: "'OpenDyslexic', sans-serif",
             }}
           />
 

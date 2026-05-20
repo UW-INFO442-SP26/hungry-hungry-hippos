@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'OpenDyslexic'; /* Custom name */
+  src: url('fonts/OpenDyslexic-Bold.otf') format('opentype'); /* Path to your file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'OpenDyslexic';
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
