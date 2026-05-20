@@ -29,6 +29,13 @@ We focused on the UN SDG Goal 4: Quality Education, specifically with the goals 
 * Gamified Elements with Hippo Character and Animations
 
 # Bugs
+* Accepts only correct answers
+* No auditory or visual feedback
+* Auto sumbit typed words
+* Case sensitive
+* Doesn't accpet words with spaces
+* Word being typed should be titled
+* Move practice tab next to home in banner
 
 # Development Features
 * React JS

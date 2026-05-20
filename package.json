@@ -12,9 +12,13 @@
   "dependencies": {
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
+<<<<<<< HEAD
     "react-router": "^7.14.2",
     "react-simple-keyboard": "^3.8.209",
     "simple-keyboard": "^3.8.144"
+=======
+    "react-router": "^7.14.2"
+>>>>>>> 69073d4e79ef8c56af901902308204f325964647
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",
