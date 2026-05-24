@@ -27,6 +27,26 @@ export default function Practice() {
     inputRef.current?.focus();
   }, [index]);
 
+
+  /* from AI for the colors of keyboard */
+
+  const [pressedKey, setPressedKey] = useState(null);
+
+  useEffect(() => {
+    function handleKeyDown(e) {
+      setPressedKey(e.key.toLowerCase());
+    }
+    function handleKeyUp() {
+      setPressedKey(null);
+    }
+    window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("keyup", handleKeyUp);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("keyup", handleKeyUp);
+    };
+  }, []);
+
   const current = WORDS[index % WORDS.length];
 
   /* AI suggestion to split into two differnet handlers for virtural and physical keybaord */
@@ -121,10 +141,21 @@ export default function Practice() {
     {showKeyboard && (
       <Keyboard
        keyboardRef={(r) => (keyboardRef.current = r)}
-       onChange={handleChange}
        inputName="default"
-       physicalKeyboardHighlight={true}
-       physicalKeyboardHighlightBgColor="#9ab4d0"
+      
+       buttonTheme={[
+        { class: "finger-pinky",  buttons: "` 1 q a z  {shiftleft} {shiftright} {lock} {tab} .com @ " },
+        { class: "finger-ring",   buttons: "2 w s x" },
+        { class: "finger-middle", buttons: "3 e d c" },
+        { class: "finger-index",  buttons: "4 5 r t f g v b" },
+        { class: "finger-thumb",  buttons: "{space}" },
+        { class: "finger-index-right",  buttons: "6 7 y u h j n m" },
+        { class: "finger-middle-right", buttons: "8 i k ," },
+        { class: "finger-ring-right",   buttons: "9 o l ." },
+        { class: "finger-pinky-right",  buttons: "0 - = p ; ' [ ] \\ {bksp} {enter} {shift} /" },
+        ...(pressedKey ? [{ class: "key-pressed", buttons: pressedKey }] : []),
+
+       ]}
       />
     )}
   </>

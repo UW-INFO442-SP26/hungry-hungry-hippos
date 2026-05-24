@@ -65,6 +65,22 @@ body {
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* AI to display colors of keyboard */
+.hg-button.finger-pinky { background: #c084fc !important; color: #000 !important; }
+.hg-button.finger-ring { background: #60a5fa !important; color: #000 !important; }
+.hg-button.finger-middle { background: #34d399 !important; color: #000 !important; }
+.hg-button.finger-index { background: #facc15 !important; color: #000 !important; }
+.hg-button.finger-thumb { background: #f87171 !important; color: #000 !important; }
+.hg-button.finger-index-right { background: #fb923c !important; color: #000 !important; }
+.hg-button.finger-middle-right { background: #2dd4bf !important; color: #000 !important; }
+.hg-button.finger-ring-right { background: #818cf8 !important; color: #000 !important; }
+.hg-button.finger-pinky-right { background: #c084fc !important; color: #000 !important; }
+
+.hg-button.key-pressed {
+  filter: brightness(1.4) !important;
+  transform: scale(0.95) !important;
+}
+
 
 /* Mobile styles */
 @media (max-width: 768px) {
