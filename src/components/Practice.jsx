@@ -31,7 +31,7 @@ export default function Practice() {
 
   /* AI suggestion to split into two differnet handlers for virtural and physical keybaord */
 
-  function handleChange(e) {
+  function handleChange(value) {
     setInput(value);
 
 
@@ -52,15 +52,15 @@ export default function Practice() {
       <main
         style={{
           display: "flex",
-          alignItems: "center",
+          alignItems: "flex-start",
           justifyContent: "center",
           padding: "2rem",
 
-          paddingBottom: "320px",
+          paddingBottom: "280px",
           minHeight: "calc(100vh - 64px)",
         }}
       >
-        <div style={{ width: "100%", maxWidth: 560 }}>
+        <div style={{ width: "100%", maxWidth: 560, marginTop: "2rem" }}>
           <h1 style={{ textAlign: "center", marginTop: 0 }}>Practice</h1>
 
           <div
