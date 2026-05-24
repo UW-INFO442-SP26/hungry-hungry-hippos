@@ -29,9 +29,11 @@ export default function Practice() {
 
   const current = WORDS[index % WORDS.length];
 
-  function handleChange(value) {
+  /* AI suggestion to split into two differnet handlers for virtural and physical keybaord */
 
+  function handleChange(e) {
     setInput(value);
+
 
     if (value === current) {
       setCompleted((c) => c + 1);
@@ -42,6 +44,8 @@ export default function Practice() {
       keyboardRef.current.clearInput();
     }
   }
+
+  
 
   return (
     <>
@@ -115,13 +119,13 @@ export default function Practice() {
       </main>
 
     {showKeyboard && (
-      <div className="virtual-keyboard-container">
-       <Keyboard
-         keyboardRef={(r) => (keyboardRef.current = r)}
-         onChange={handleChange}
-         inputName="default"
-        />
-      </div>
+      <Keyboard
+       keyboardRef={(r) => (keyboardRef.current = r)}
+       onChange={handleChange}
+       inputName="default"
+       physicalKeyboardHighlight={true}
+       physicalKeyboardHighlightBgColor="#9ab4d0"
+      />
     )}
   </>
   );
