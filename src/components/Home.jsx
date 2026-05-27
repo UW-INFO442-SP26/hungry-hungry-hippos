@@ -88,16 +88,21 @@ const keyRows = [
     { key: "g", finger: "indexLeft" }, { key: "h", finger: "indexRight" },
     { key: "j", finger: "indexRight" }, { key: "k", finger: "middleRight" },
     { key: "l", finger: "ringRight" },
+    { key: ";", finger: "pinkyRight" },
+    { key: "'", finger: "pinkyRight" },
+    { key: "ent", finger: "pinkyRight" },
+
+
 
   ],
   [
-    { key: "shift", finger: "pinky" },
+    { key: "shft", finger: "pinky" },
     { key: "z", finger: "pinky" }, { key: "x", finger: "ring" },
     { key: "c", finger: "middle" }, { key: "v", finger: "indexLeft" },
     { key: "b", finger: "indexLeft" }, { key: "n", finger: "indexRight" },
     { key: "m", finger: "indexRight" },
     { key: ".", finger: "ringRight" }, { key: "/", finger: "pinkyRight" },
-    { key: "shift", finger: "pinkyRight" },
+    { key: "shft", finger: "pinkyRight" },
   ],
 ];
 
