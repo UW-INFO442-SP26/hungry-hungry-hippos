@@ -3,6 +3,9 @@ import { KeyboardReact as Keyboard } from "react-simple-keyboard";
 import "simple-keyboard/build/css/index.css";
 import wordData from "../data/words.json";
 
+function shuffle(array) {
+    return [...array].sort(() => Math.random() - 0.5);
+  }
 
 export default function Practice() {
   const [index, setIndex] = useState(0);
@@ -16,7 +19,7 @@ export default function Practice() {
   const keyboardRef = useRef(null);
   const [level, setLevel] = useState("level1");
 
-  const WORDS = wordData[level]
+  const WORDS = React.useMemo(() => shuffle(wordData[level]), [level]);
   const current = WORDS[index % WORDS.length];
   
 
@@ -61,6 +64,7 @@ export default function Practice() {
       keyboardRef.current.clearInput();
     }
   }
+
 
   return (
     <>
