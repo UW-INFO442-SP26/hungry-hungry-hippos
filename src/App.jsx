@@ -3,15 +3,8 @@ import "./App.css";
 import { Routes, Route } from "react-router";
 import NavBar from "./components/NavBar";
 import Practice from "./components/Practice";
+import Home from "./components/Home";
 
-function Home() {
-  return (
-    <main style={{ padding: "2rem" }}>
-      <h1>Home</h1>
-      <p>Welcome to HippoTypes.</p>
-    </main>
-  );
-}
 
 function About() {
   return (
