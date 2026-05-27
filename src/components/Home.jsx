@@ -1,15 +1,15 @@
 import React from "react";
 
 const FINGER_COLORS = {
-  pinky: "#f472b6",
-  ring: "#818cf8",
+  pinky: "#c084fc",
+  ring: "#60a5fa",
   middle: "#34d399",
   indexLeft: "#facc15",
   thumb: "#f87171",
   indexRight: "#fb923c",
   middleRight: "#2dd4bf",
-  ringRight: "#60a5fa",
-  pinkyRight: "#f472b6",
+  ringRight: "#818cf8",
+  pinkyRight: "#c084fc",
 };
 
 const fingers = [
@@ -72,24 +72,32 @@ const keyRows = [
     { key: "=", finger: "pinkyRight" },
   ],
   [
+    { key: "tab", finger: "pinky" },
     { key: "q", finger: "pinky" }, { key: "w", finger: "ring" },
     { key: "e", finger: "middle" }, { key: "r", finger: "indexLeft" },
     { key: "t", finger: "indexLeft" }, { key: "y", finger: "indexRight" },
     { key: "u", finger: "indexRight" }, { key: "i", finger: "middleRight" },
     { key: "o", finger: "ringRight" }, { key: "p", finger: "pinkyRight" },
+    { key: "[", finger: "pinkyRight" }, { key: "]", finger: "pinkyRight" },
+    { key: "\\", finger: "pinkyRight" },
   ],
   [
+    { key: "caps", finger: "pinky" },
     { key: "a", finger: "pinky" }, { key: "s", finger: "ring" },
     { key: "d", finger: "middle" }, { key: "f", finger: "indexLeft" },
     { key: "g", finger: "indexLeft" }, { key: "h", finger: "indexRight" },
     { key: "j", finger: "indexRight" }, { key: "k", finger: "middleRight" },
     { key: "l", finger: "ringRight" },
+
   ],
   [
+    { key: "shift", finger: "pinky" },
     { key: "z", finger: "pinky" }, { key: "x", finger: "ring" },
     { key: "c", finger: "middle" }, { key: "v", finger: "indexLeft" },
     { key: "b", finger: "indexLeft" }, { key: "n", finger: "indexRight" },
     { key: "m", finger: "indexRight" },
+    { key: ".", finger: "ringRight" }, { key: "/", finger: "pinkyRight" },
+    { key: "shift", finger: "pinkyRight" },
   ],
 ];
 
@@ -152,7 +160,7 @@ export default function Home() {
           borderLeft: "4px solid #f472b6",
         }}>
           <p style={{ margin: 0, fontSize: "0.95rem", lineHeight: 1.7, color: "#374151" }}>
-            <strong>Our Mission:</strong> Aligned with UN SDG Goal 4 — Quality Education,
+            <strong>Our Mission:</strong> Aligned with UN SDG Goal 4: Quality Education,
             HippoTypes addresses the question: <em>"How might we help elementary-age learners
             manage the impact of dyslexia on their ability to use a traditional QWERTY-based keyboard?"</em>
             {" "}We aim to support SDG 4.6 by helping all youth achieve literacy and digital fluency.

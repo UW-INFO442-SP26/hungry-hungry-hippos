@@ -84,7 +84,6 @@ body {
 .hg-button {
   font-family: 'OpenDyslexic', sans-serif !important;
 }
-
 /* Mobile styles */
 @media (max-width: 768px) {
   .hamburger {
