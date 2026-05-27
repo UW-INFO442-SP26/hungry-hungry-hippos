@@ -42,3 +42,9 @@ We focused on the UN SDG Goal 4: Quality Education, specifically with the goals 
 * HTML, CSS, JavaScript
 * Netlify
 
+# Persona
+*Insert*
+
+# Testing Protocal
+[INFO 442 Prototype and Testing Protocol.pdf](https://github.com/user-attachments/files/28322891/INFO.442.Prototype.and.Testing.Protocol.pdf)
+
