@@ -230,8 +230,11 @@ export default function Home() {
           background: "#1f2028",
           borderRadius: 16,
           padding: "1.25rem",
-          display: "inline-block",
+          display: "block",
+          width: "100%",
+          boxSizing: "border-box",
           boxShadow: "0 8px 32px rgba(0,0,0,0.3)",
+          overflowx: "auto",
         }}>
           {keyRows.map((row, ri) => (
             <div key={ri} style={{
@@ -239,6 +242,7 @@ export default function Home() {
               gap: 5,
               marginBottom: ri < keyRows.length - 1 ? 5 : 0,
               justifyContent: "center",
+              flexWrap: "nowrap",
             }}>
               {row.map((k, ki) => (
                 <div key={ki} style={{

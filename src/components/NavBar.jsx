@@ -28,11 +28,7 @@ export default function NavBar() {
             About
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/contact">
-            Contact
-          </NavLink>
-        </li>
+       
         <li>
           <NavLink to="/practice">
             Practice

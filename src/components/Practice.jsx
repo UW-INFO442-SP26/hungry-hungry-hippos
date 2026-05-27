@@ -3,6 +3,7 @@ import { KeyboardReact as Keyboard } from "react-simple-keyboard";
 import "simple-keyboard/build/css/index.css";
 import wordData from "../data/words.json";
 
+/* used AI to help create shuffle of words */
 function shuffle(array) {
     return [...array].sort(() => Math.random() - 0.5);
   }
