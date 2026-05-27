@@ -69,7 +69,7 @@ export default function Practice() {
         padding: "2rem", paddingBottom: "280px", minHeight: "calc(100vh - 64px)",
       }}>
         <div style={{ width: "100%", maxWidth: 560, marginTop: "2rem" }}>
-          <h1 style={{ textAlign: "center", marginTop: 0 }}>Practice</h1>
+          <h1 style={{ textAlign: "center", marginTop: 0, fontFamily: "'OpenDyslexic', sans-serif", lineHeight: "50pt",  }}>Time to practice!</h1>
 
           {/* Controls: Toggle for Auto-Read */}
           <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: "0.5rem" }}>
@@ -94,7 +94,7 @@ export default function Practice() {
               role="dialog"
             >
               <div style={{ width: 40 }} /> {/* Spacer */}
-              <p style={{ margin: 0, fontSize: "1.5rem", fontWeight: 600 }}>{current}</p>
+              <p style={{ margin: 0, fontSize: "2rem", fontWeight: 600, color: "darkgreen", }}>{current}</p>
               <button
                 onClick={handleSpeak}
                 style={{
