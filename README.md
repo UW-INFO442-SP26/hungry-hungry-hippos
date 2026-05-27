@@ -28,15 +28,6 @@ We focused on the UN SDG Goal 4: Quality Education, specifically with the goals 
 * Information Page
 * Gamified Elements with Hippo Character and Animations
 
-# Bugs
-* Accepts only correct answers
-* No auditory or visual feedback
-* Auto sumbit typed words
-* Case sensitive
-* Doesn't accpet words with spaces
-* Word being typed should be titled
-* Move practice tab next to home in banner
-
 # Development Features
 * React JS
 * HTML, CSS, JavaScript
@@ -46,5 +37,14 @@ We focused on the UN SDG Goal 4: Quality Education, specifically with the goals 
 *Insert*
 
 # Testing Protocal
-[INFO 442 Prototype and Testing Protocol.pdf](https://github.com/user-attachments/files/28322891/INFO.442.Prototype.and.Testing.Protocol.pdf)
+Our entire testing protocal can be found here [Hungry Hungry Hippos Prototype and Testing Protocol.pdf](https://github.com/user-attachments/files/28322891/INFO.442.Prototype.and.Testing.Protocol.pdf)
+
+# Bugs
+* Accepts only correct answers
+* No auditory or visual feedback
+* Auto sumbit typed words
+* Case sensitive
+* Doesn't accpet words with spaces
+* Word being typed should be titled
+* Move practice tab next to home in banner
 
