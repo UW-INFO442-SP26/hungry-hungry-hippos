@@ -4,16 +4,9 @@ import { Routes, Route } from "react-router";
 import NavBar from "./components/NavBar";
 import Practice from "./components/Practice";
 import Home from "./components/Home";
+import About from "./components/About";
 
 
-function About() {
-  return (
-    <main style={{ padding: "2rem" }}>
-      <h1>About</h1>
-      <p>About page.</p>
-    </main>
-  );
-}
 
 function Contact() {
   return (
