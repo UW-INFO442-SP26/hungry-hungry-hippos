@@ -1,0 +1,20 @@
+{
+  "level1": [
+    "cat", "dog", "hat", "bat", "sat",
+    "map", "cap", "lap", "tap", "nap",
+    "hip", "tip", "dip", "lip", "sip",
+    "hot", "dot", "lot", "pot", "got"
+  ],
+  "level2": [
+    "apple", "hippo", "happy", "dance", "plant",
+    "bring", "clock", "flame", "grape", "juice",
+    "knife", "lemon", "magic", "night", "ocean",
+    "piano", "queen", "river", "stone", "tiger"
+  ],
+  "level3": [
+    "banana", "castle", "dragon", "empire", "forest",
+    "garden", "heroes", "island", "jungle", "kitten",
+    "laptop", "monkey", "nectar", "orange", "parrot",
+    "rabbit", "rocket", "sunset", "turtle", "violet"
+  ]
+}

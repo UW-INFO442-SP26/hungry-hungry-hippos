@@ -1,11 +1,8 @@
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import { KeyboardReact as Keyboard } from "react-simple-keyboard";
 import "simple-keyboard/build/css/index.css";
+import wordData from "../data/words.json";
 
-const WORDS = [
-  "apple", "banana", "orange", "hippo", "react", 
-  "javascript", "keyboard", "speed", "practice",
-];
 
 export default function Practice() {
   const [index, setIndex] = useState(0);
@@ -17,8 +14,11 @@ export default function Practice() {
 
   const inputRef = useRef(null);
   const keyboardRef = useRef(null);
+  const [level, setLevel] = useState("level1");
 
+  const WORDS = wordData[level]
   const current = WORDS[index % WORDS.length];
+  
 
   // speech logic
   const handleSpeak = useCallback(() => {
@@ -84,6 +84,31 @@ export default function Practice() {
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", gap: "1rem", alignItems: "stretch" }}>
+
+
+            <div style={{ display: "flex", gap: "0.5rem", justifyContent: "center", marginBottom: "0.5rem" }}>
+              {["level1", "level2", "level3"].map((l) => (
+                <button
+                  key={l}
+                  onClick={() => { setLevel(l); setIndex(0); setInput(""); keyboardRef.current?.clearInput(); }}
+                  style={{
+                    padding: "0.4rem 1rem",
+                    borderRadius: 20,
+                    border: "2px solid",
+                    borderColor: level === l ? "#c084fc" : "#ccc",
+                    background: level === l ? "#c084fc" : "transparent",
+                    color: level === l ? "#000" : "var(--text)",
+                    cursor: "pointer",
+                    fontFamily: "'OpenDyslexic', sans-serif",
+                    fontWeight: level === l ? 700 : 400,
+                  }}
+                >
+                  {l === "level1" ? "Level 1" : l === "level2" ? "Level 2" : "Level 3"}
+                </button>
+              ))}
+            </div>
+
+            
             <div
               style={{
                 border: "1px solid #ccc", borderRadius: 8, padding: "0.75rem",
