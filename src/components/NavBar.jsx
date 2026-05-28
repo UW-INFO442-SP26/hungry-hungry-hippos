@@ -24,14 +24,13 @@ export default function NavBar() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about">
-            About
-          </NavLink>
-        </li>
-       
-        <li>
           <NavLink to="/practice">
             Practice
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/about">
+            About
           </NavLink>
         </li>
       </ul>
