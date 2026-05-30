@@ -37,7 +37,7 @@ We focused on the UN SDG Goal 4: Quality Education, specifically with the goals 
 *Insert*
 
 # Testing Protocal
-Our entire testing protocal can be found here [Hungry Hungry Hippos Prototype and Testing Protocol.pdf](https://github.com/user-attachments/files/28322891/INFO.442.Prototype.and.Testing.Protocol.pdf)
+Our entire testing protocal can be found here [Hungry Hungry Hippos Prototype and Testing Protocol.pdf](INFO.442.Prototype.and.Testing.Protocol.pdf)
 
 # Bugs
 * Accepts only correct answers
