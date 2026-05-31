@@ -34,7 +34,7 @@ We focused on the UN SDG Goal 4: Quality Education, specifically with the goals 
 * Netlify
 
 # Persona
-*Insert*
+ 
 
 # Testing Protocal
 Our entire testing protocal can be found here [Hungry Hungry Hippos Prototype and Testing Protocol.pdf](INFO.442.Prototype.and.Testing.Protocol.pdf)
