@@ -18,6 +18,9 @@ We focused on the UN SDG Goal 4: Quality Education, specifically with the goals 
 * Bertrand Wan
 * Tilly Word
 
+# Live Site
+https://hippotypes.netlify.app/
+
 # Features
 
 * Auditory Feedback
