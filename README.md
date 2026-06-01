@@ -27,7 +27,7 @@ We focused on the UN SDG Goal 4: Quality Education, specifically with the goals 
   * Dyslexia-Oriented Font 
 * Performance-Based Levels
 * Information Page
-* Gamified Elements with Hippo Character and Animations
+* Gamified Elements with Hippo Character
 
 # Development Features
 
@@ -51,10 +51,9 @@ Our entire testing protocol can be found here [Hungry Hungry Hippos Prototype an
 
 # Bugs
 
-* Accepts only correct answers
-* No auditory or visual feedback
-* Auto submit typed words
-* Case sensitive
-* Doesn't accept words with spaces
-* Word being typed should be titled
-* Move practice tab next to home in banner
+* Words are automatically submitted once typed correctly.
+  * Workaround: continue typing normally to advance to the next word.
+* The application currently treats uppercase and lowercase letters differently.
+  * Workaround: enter all words in lowercase.
+* Multi-word phrases are not currently supported.
+  * Workaround: practice using single-word prompts only.
