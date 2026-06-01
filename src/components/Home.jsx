@@ -1,5 +1,6 @@
 import React from "react";
 import hippoImg from "../assets/point_hippo.png";
+import hippoLogo from '../assets/logo.png';
 
 const FINGER_COLORS = {
   pinky: "#c084fc",
