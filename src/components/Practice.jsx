@@ -97,7 +97,7 @@ export default function Practice() {
           <h1 style={{ textAlign: "center", marginTop: 0, lineHeight: "50pt",  }}>Time to practice!</h1>
 
           {/* Controls: Toggle for Auto-Read */}
-          <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: "0.5rem" }}>
+          <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: "0.5rem", color: "#000", }}>
             <label style={{ fontSize: "0.875rem", display: "flex", alignItems: "center", cursor: "pointer", gap: "0.5rem" }}>
               <input 
                 type="checkbox" 
@@ -122,7 +122,7 @@ export default function Practice() {
                     border: "2px solid",
                     borderColor: level === l ? "#c084fc" : "#ccc",
                     background: level === l ? "#c084fc" : "transparent",
-                    color: level === l ? "#000" : "var(--text)",
+                    color: "#000",
                     cursor: "pointer",
                     fontFamily: "'OpenDyslexic', sans-serif",
                     fontWeight: level === l ? 700 : 400,
@@ -153,6 +153,7 @@ export default function Practice() {
                   display: "flex", alignItems: "center", justifyContent: "center"
                 }}
                 title="Speak Word"
+                aria-label="Speak Word"
               >
                 &#x25B6;
               </button>

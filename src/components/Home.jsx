@@ -124,7 +124,7 @@ export default function Home() {
           margin: "0 0 1rem",
           lineHeight: 1.2,
         }}>
-          Welcome to <span style={{ color: "#f472b6" }}>HippoTypes</span>
+          Welcome to <span style={{ color: "#762c89" }}>HippoTypes</span>
         </h1>
 
         {/* Hippo image */}
