@@ -1,13 +1,21 @@
 import { useState } from "react";
 import { NavLink } from "react-router";
 import "./NavBar.css";
+import hippoLogo from '../assets/logo.png';
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
 
   return (
     <nav className="nav">
-      <div className="logo">HippoTypes</div>
+      <div className="logo">
+      <img
+        src={hippoLogo}
+        alt="HippoTypes logo"
+        className="logo-image"
+      />
+      <span>HippoTypes</span>
+      </div>
 
       {/* Hamburger Icon */}
       <div className="hamburger" onClick={() => setOpen(!open)}>
