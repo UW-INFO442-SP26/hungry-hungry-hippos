@@ -45,7 +45,7 @@ Our second persona is Alex Ford, a 9 year old who loves art and is a visual lear
 
 # Testing Protocol
 
-Our entire testing protocol can be found here [Hungry Hungry Hippos Prototype and Testing Protocol.pdf](INFO.442.Prototype.and.Testing.Protocol.pdf)
+Our entire testing protocol can be found here [Hungry Hungry Hippos Prototype and Testing Protocol.pdf](INFO 442 Prototype and Testing Protocol.pdf)
 
 # Bugs
 
