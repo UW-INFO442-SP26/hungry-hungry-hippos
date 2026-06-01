@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: darkgreen;
+  background: #666;
   color: white;
 }
 
@@ -52,7 +52,7 @@
     position: absolute;
     top: 70px;
     right: 0;
-    background: #222;
+    background: #666;
     flex-direction: column;
     width: 200px;
     padding: 1rem;

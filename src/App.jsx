@@ -26,6 +26,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+
+      <footer>&copy; Hungry Hungry Hippos 2026</footer>
     </div>
   );
 }

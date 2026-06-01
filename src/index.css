@@ -110,3 +110,10 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+footer {
+  text-align: left;
+  background: #666;
+  color: white;
+  padding: 1rem;
+}

@@ -124,7 +124,7 @@ export default function Practice() {
               role="dialog"
             >
               <div style={{ width: 40 }} /> {/* Spacer */}
-              <p style={{ margin: 0, fontSize: "2rem", fontWeight: 600, color: "darkgreen", }}>{current}</p>
+              <p style={{ margin: 0, fontSize: "2rem", fontWeight: 600, color: "#666", }}>{current}</p>
               <button
                 onClick={handleSpeak}
                 style={{
