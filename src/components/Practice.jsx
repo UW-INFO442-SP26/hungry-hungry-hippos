@@ -190,8 +190,8 @@ export default function Practice() {
             src={hippoSrc}
             alt={hippoState === "correct" ? "Happy hippo!" : hippoState === "incorrect" ? "Sad hippo" : "Hippo cheering you on"}
             style={{
-              width: 160,
-              height: 160,
+              width: 250,
+              height: 250,
               objectFit: "contain",
               transition: "opacity 0.2s ease",
               filter: "drop-shadow(0 4px 12px rgba(192,132,252,0.35))",
@@ -200,9 +200,9 @@ export default function Practice() {
           <p style={{
             marginTop: "0.5rem",
             fontSize: "0.85rem",
-            color: hippoState === "correct" ? "#16a34a"
+            color: hippoState === "correct" ? "#1637a3"
               : hippoState === "incorrect" ? "#dc2626"
-              : "#9ca3af",
+              : "#762c89",
             fontFamily: "'OpenDyslexic', sans-serif",
             fontWeight: 600,
             minHeight: "1.2em",
