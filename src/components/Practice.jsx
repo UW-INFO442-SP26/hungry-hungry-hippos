@@ -94,7 +94,7 @@ export default function Practice() {
         gap: "2rem",
       }}>
         <div style={{ width: "100%", maxWidth: 560, marginTop: "2rem" }}>
-          <h1 style={{ textAlign: "center", marginTop: 0, fontFamily: "'OpenDyslexic', sans-serif", lineHeight: "50pt",  }}>Time to practice!</h1>
+          <h1 style={{ textAlign: "center", marginTop: 0, lineHeight: "50pt",  }}>Time to practice!</h1>
 
           {/* Controls: Toggle for Auto-Read */}
           <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: "0.5rem" }}>
