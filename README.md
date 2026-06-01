@@ -60,3 +60,4 @@ Our entire testing protocol can be found here [Hungry Hungry Hippos Prototype an
   * Workaround: enter all words in lowercase.
 * Multi-word phrases are not currently supported.
   * Workaround: practice using single-word prompts only.
+* In mobile view the Hippo Mascot covers the hamburger menu drop down. 
