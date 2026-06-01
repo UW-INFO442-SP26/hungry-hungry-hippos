@@ -1,4 +1,5 @@
 import React from "react";
+import hippoImg from "../assets/point_hippo.png";
 
 const FINGER_COLORS = {
   pinky: "#c084fc",
@@ -123,25 +124,22 @@ export default function Home() {
           margin: "0 0 1rem",
           lineHeight: 1.2,
         }}>
-          Welcome to <span style={{ color: "#f472b6" }}>HippoTypes</span> 🦛
+          Welcome to <span style={{ color: "#f472b6" }}>HippoTypes</span>
         </h1>
 
-        {/* Hippo placeholder */}
-        <div style={{
-          width: 200,
-          height: 200,
-          borderRadius: "50%",
-          background: "linear-gradient(135deg, #e0e7ff, #fce7f3)",
-          margin: "0 auto 2rem",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          fontSize: 80,
-          boxShadow: "0 8px 32px rgba(244,114,182,0.2)",
-          border: "3px dashed #f472b6",
-        }}>
-          🦛
-        </div>
+        {/* Hippo image */}
+        <img
+          src={hippoImg}
+          alt="HippoTypes mascot"
+          style={{
+            width: 200,
+            height: 200,
+            objectFit: "contain",
+            margin: "0 auto 2rem",
+            display: "block",
+            filter: "drop-shadow(0 8px 16px rgba(192,132,252,0.4))",
+          }}
+        />
 
         <p style={{
           fontSize: "1.1rem",

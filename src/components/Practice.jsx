@@ -1,4 +1,7 @@
 import React, { useEffect, useRef, useState, useCallback } from "react";
+import hippoPointing from "../assets/point_hippo.png";
+import hippoCorrect from "../assets/hippo_correct_answer.png";
+import hippoIncorrect from "../assets/hippo_incorrect_answer.png";
 import { KeyboardReact as Keyboard } from "react-simple-keyboard";
 import "simple-keyboard/build/css/index.css";
 import wordData from "../data/words.json";
@@ -15,6 +18,8 @@ export default function Practice() {
   const [completed, setCompleted] = useState(0);
   const [isAutoReadEnabled, setIsAutoReadEnabled] = useState(false); 
   const [pressedKey, setPressedKey] = useState(null);
+  const [hippoState, setHippoState] = useState("pointing"); // "pointing" | "correct" | "incorrect"
+  const hippoTimeoutRef = useRef(null);
 
   const inputRef = useRef(null);
   const keyboardRef = useRef(null);
@@ -23,7 +28,6 @@ export default function Practice() {
   const WORDS = React.useMemo(() => shuffle(wordData[level]), [level]);
   const current = WORDS[index % WORDS.length];
   
-
   // speech logic
   const handleSpeak = useCallback(() => {
     if ("speechSynthesis" in window) {
@@ -59,19 +63,35 @@ export default function Practice() {
   function handleChange(value) {
     setInput(value);
     if (value === current) {
+      // Correct!
+      clearTimeout(hippoTimeoutRef.current);
+      setHippoState("correct");
+      hippoTimeoutRef.current = setTimeout(() => setHippoState("pointing"), 1500);
       setCompleted((c) => c + 1);
       setInput("");
       setIndex((i) => i + 1);
       keyboardRef.current.clearInput();
+    } else if (value.length > 0 && !current.startsWith(value)) {
+      // Incorrect keystroke
+      clearTimeout(hippoTimeoutRef.current);
+      setHippoState("incorrect");
+      hippoTimeoutRef.current = setTimeout(() => setHippoState("pointing"), 1000);
+    } else {
+      setHippoState("pointing");
     }
   }
 
+
+  const hippoSrc = hippoState === "correct" ? hippoCorrect
+    : hippoState === "incorrect" ? hippoIncorrect
+    : hippoPointing;
 
   return (
     <>
       <main style={{
         display: "flex", alignItems: "flex-start", justifyContent: "center",
         padding: "2rem", paddingBottom: "280px", minHeight: "calc(100vh - 64px)",
+        gap: "2rem",
       }}>
         <div style={{ width: "100%", maxWidth: 560, marginTop: "2rem" }}>
           <h1 style={{ textAlign: "center", marginTop: 0, fontFamily: "'OpenDyslexic', sans-serif", lineHeight: "50pt",  }}>Time to practice!</h1>
@@ -155,6 +175,42 @@ export default function Practice() {
               Completed: {completed}
             </div>
           </div>
+        </div>
+
+        {/* Hippo feedback panel */}
+        <div style={{
+          marginTop: "2rem",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "flex-start",
+          flexShrink: 0,
+        }}>
+          <img
+            src={hippoSrc}
+            alt={hippoState === "correct" ? "Happy hippo!" : hippoState === "incorrect" ? "Sad hippo" : "Hippo cheering you on"}
+            style={{
+              width: 160,
+              height: 160,
+              objectFit: "contain",
+              transition: "opacity 0.2s ease",
+              filter: "drop-shadow(0 4px 12px rgba(192,132,252,0.35))",
+            }}
+          />
+          <p style={{
+            marginTop: "0.5rem",
+            fontSize: "0.85rem",
+            color: hippoState === "correct" ? "#16a34a"
+              : hippoState === "incorrect" ? "#dc2626"
+              : "#9ca3af",
+            fontFamily: "'OpenDyslexic', sans-serif",
+            fontWeight: 600,
+            minHeight: "1.2em",
+          }}>
+            {hippoState === "correct" ? "Great job! 🎉"
+              : hippoState === "incorrect" ? "Try again!"
+              : "You got this!"}
+          </p>
         </div>
       </main>
 
